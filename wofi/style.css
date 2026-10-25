@@ -1,0 +1,33 @@
+/* ~/.config/wofi/style.css */
+* {
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 16px;
+}
+
+window {
+    background-color: #24273a;
+    border: 1px solid #c6a0f6;
+    border-radius: 15px;
+}
+
+#input {
+    margin: 8px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #1e2030;
+    color: #cad3f5;
+}
+
+#entry {
+    padding: 8px;
+    border-radius: 8px;
+}
+
+#entry:selected {
+    background-color: #c6a0f6;
+    color: #24273a; /* 选中时文字变深，保证对比度 */
+}
+
+#text {
+    color: #cad3f5;
+}

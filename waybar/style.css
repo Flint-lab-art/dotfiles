@@ -1,0 +1,78 @@
+* {
+    font-family: "JetBrainsMono Nerd Font", sans-serif;
+    font-size: 13px;
+    border: none;
+    border-radius: 0;
+}
+
+window#waybar {
+    background: rgba(30, 30, 46, 0.88);
+    color: #cdd6f4;
+    border-radius: 12px;
+    margin: 4px 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+#workspaces button {
+    padding: 0 10px;
+    min-width: 24px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #a6adc8;
+    border-radius: 8px;
+    margin: 3px 2px;
+    transition: all 0.2s ease;
+}
+
+#workspaces button:hover {
+    background: rgba(137, 180, 250, 0.20);
+    color: #cdd6f4;
+}
+
+#workspaces button.active {
+    background: #89b4fa;
+    color: #1e1e2e;
+    font-weight: bold;
+}
+
+#workspaces button label {
+    color: inherit;
+}
+
+#workspaces button.active label {
+    color: #1e1e2e;
+}
+
+#clock,
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#temperature,
+#backlight,
+#battery,
+#tray,
+#idle_inhibitor,
+#window {
+    padding: 0 12px;
+    margin: 3px 1px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 8px;
+    color: #cdd6f4;
+}
+
+#clock {
+    font-weight: bold;
+    color: #89b4fa;
+}
+
+#clock:hover,
+#pulseaudio:hover,
+#network:hover,
+#cpu:hover,
+#memory:hover,
+#temperature:hover,
+#backlight:hover,
+#battery:hover,
+#idle_inhibitor:hover {
+    background: rgba(255, 255, 255, 0.12);
+}

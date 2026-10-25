@@ -1,0 +1,5 @@
+mode = drun
+allow_images = true
+insensitive = true
+lines = 15
+no_actions = true

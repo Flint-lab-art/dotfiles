@@ -1,0 +1,95 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 32,
+    "spacing": 4,
+    "modules-left": [
+        "hyprland/workspaces",
+        "hyprland/window"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        // "network",
+        "cpu",
+        "memory",
+        "temperature",
+        "backlight",
+        "tray"
+    ],
+
+    "hyprland/workspaces": {
+        "on-click": "activate",
+        "format": "{icon}",
+        "format-icons": {
+            "1": "◆",
+            "2": "◇",
+            "3": "○",
+            "4": "●",
+            "5": "△",
+            "default": "·"
+        }
+    },
+
+    "hyprland/window": {
+        "format": "{title}",
+        "max-length": 60,
+        "separate-outputs": true
+    },
+
+    "clock": {
+        "format": " {:%H:%M}",
+        "format-alt": " {:%Y-%m-%d %A}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "  {volume}%",
+        "format-icons": {
+            "headphone": "",
+            "default": ["", "", ""]
+        },
+        "scroll-step": 5,
+        "on-click": "pavucontrol"
+    },
+
+    "network": {
+        "format-wifi": "{icon}  {essid} ({signalStrength}%)",
+        "format-ethernet": "{icon}  {ipaddr}/{cidr}",
+        "format-disconnected": "{icon}  Disconnected",
+        "tooltip-format": "{icon} {ifname} via {gwaddr} ",
+        "on-click": "kitty -e nmtui"
+    },
+
+    "cpu": {
+        "format": "{icon} {usage}%",
+        "tooltip": false,
+        "format-icons": {
+            "default": ""
+        }
+    },
+
+    "memory": {
+        "format": "{icon} {percentage}%",
+        "tooltip-format": "{used:0.1f}G / {total:0.1f}G",
+        "format-icons": ""
+    },
+
+    "temperature": {
+        "critical-threshold": 80,
+        "format": "{icon} {temperatureC}°C",
+        "format-icons": ["", "", ""]
+    },
+
+    "backlight": {
+        "format": "{icon}  {percent}%",
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
+    },
+
+    "tray": {
+        "spacing": 10
+    }
+}
