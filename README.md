@@ -11,7 +11,6 @@
 - 启动器：Wofi
 - 终端复用：Zellij
 - 文件管理器：Ranger（带 devicons）
-- 编辑器：Neovim（TokyoNight + 透明）
 - 输入法：Fcitx5
 
 ## 目录结构
@@ -45,16 +44,12 @@
 - pavucontrol — 图形化音量控制
 - xdg-desktop-portal-hyprland — 屏幕共享
 
-### Neovim 插件
-
-插件通过 `vim.pack.add` 管理，首次启动 Neovim 会自动拉取。主题使用 TokyoNight，透明背景已在 `lua/plugins.lua` 中配置。
-
 ## 部署
 
 ### 1. 克隆仓库
 
-    git clone <仓库地址> ~/Projects/dotfiles
-    cd ~/Projects/dotfiles
+    git clone https://github.com/Flint-lab-art/dotfiles.git ~/dotfiles
+    cd ~/dotfiles
     chmod +x dot.sh
 
 ### 2. 备份现有配置（如果有）
