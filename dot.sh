@@ -10,9 +10,9 @@ MANAGED=(
     "waybar"
     "uv"
     "ranger"
-    "waybar"
     "wofi"
     "zellij"
+    "kitty"
 )
 
 link_one() {

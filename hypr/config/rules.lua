@@ -20,3 +20,9 @@ hl.window_rule({
     match = { class = "^(fcitx)$" },
     no_focus = true,
 })
+
+hl.window_rule({
+    name  = "dropdown-term-workspace",
+    match = { class = "dropdown-term" },
+    workspace = "special:term silent",
+})

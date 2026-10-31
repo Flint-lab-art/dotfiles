@@ -9,7 +9,7 @@ local mainMod = "SUPER"
 local terminal = "kitty"
 
 -- 默认文件管理器
-local fileManager = "dolphin"
+local fileManager = "strata"
 
 -- 默认应用启动器
 local menu = "wofi --show drun"
